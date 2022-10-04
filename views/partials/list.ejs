@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <% if (persons.length > 0) { %>
+        <h2>Gästeliste Personen gefunden</h2>
+        <% persons.forEach((person) => { %>
+            <div>
+                <p><%= person.name %></p> 
+                <p><%= person.email %></p>
+                <p><%= person.inhalt %></p>
+                <p><%= person.betreff %></p>
+            </div>
+        
+        <% })%>
+
+        <% } else {%>
+            <p>Gästeliste</p>
+            <%}%>
+</body>
+
+</html>

@@ -21,14 +21,15 @@
         </div>
         <div>
             <label for="">Betreff</label>
-            <input type="email" name="personemail" id="">
+            <input type="text" name="betreff" id="">
         </div>
         <div>
             <label for="">Inhalt</label>
-            <input type="email" name="personemail" id="">
+            <input type="text" name="inhalt" id="">
         </div>
         <input type="submit" value="Speichern">
     </form>
+    <%- include('./partials/list',{persons}) %>
 </body>
 
 </html>
